@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --text-color: #fff;
+  --background-color: #242423;
+  --input-color: #d9d9d9;
+  --border-radius: 9px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  margin: 2rem;
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+#input-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#todo-input {
+  border-radius: var(--border-radius);
+  height: 2rem;
+  width: 30%;
+  padding-left: 0.5rem;
+}
+
+#addIcon {
+  color: white;
+}
+#addBtn {
+  border: none;
+  background: none;
+}
+
+#addBtn:active {
+  scale: 0.9;
+}
+
+.deleteBtn {
+  border: none;
+  background: none;
+}
+
+.deleteBtn:active {
+  scale: 0.9;
+}
+
+#todo-container {
+  display: flex;
+  width: 100%;
+  margin: 4rem;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  height: 3rem;
+  width: 50%;
+  padding-left: 0.5rem;
+  background-color: white;
+}
+
+h2 {
+  font-weight: lighter;
+  font-family: monospace;
+}

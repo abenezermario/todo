@@ -1,0 +1,32 @@
+1<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">TO DO</h1>
+      <div id="input-container">
+        <input id="todo-input" placeholder="add todos..." />
+        <button id="addBtn" onclick="addTodo()">
+          <ion-icon id="addIcon" size="large" name="add-circle"></ion-icon>
+        </button>
+      </div>
+
+      <ul id="todo-container"></ul>
+    </div>
+    <script src="./index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
